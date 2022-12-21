@@ -302,7 +302,7 @@ checkTries() {
         printMsg "current try: ${TRIES}/${MAX_RETRIES}"
     fi
 
-    if [ $TRIES -ge $MAX_RETRIES ]; then
+    if [ $(expr $TRIES \>= $MAX_RETRIES) -eq 1 ]; then
         if [ $VERBOSE == 1 ]; then
             printMsg "reached: ${TRIES}/${MAX_RETRIES} tries"
         fi
@@ -376,7 +376,7 @@ checkDynuUpdate() {
     if [ $ERROR == 1 ]; then
         exitWith "ERROR: Could not update IP address for: \"${DYNU_HOSTNAME}\""
     else
-        if [ $UPDATEIP == $LASTIP ]; then
+        if [ $(expr $UPDATEIP = $LASTIP) -eq 1 ]; then
             if [ $FORCE == 1 ]; then
                 updateDynu
             else
