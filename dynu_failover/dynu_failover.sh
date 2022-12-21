@@ -2,7 +2,7 @@
 #
 # Author: Denis Steinhorst [denis at steinhor dot st]
 # Description: Dynamic DNS Updater to Failover between two IPs for Dynu.com
-# Version: 1.0
+# Version: 1.0.1
 # Date: 2022-12-16
 # License: WTFPL
 #
