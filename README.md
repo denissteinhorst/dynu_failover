@@ -1,5 +1,12 @@
 # Dynu_Failover
 
+
+## IMPORTANT
+In favor of a more flexible and easier to use solution provided by Cloudflare, this project is no longer maintained.
+You can still download the script, but it will probably not be updated anymore...
+<h1></h1>
+
+
 **A simple bash script to provide failover functionality to your dynu.com dynamic-dns based on dns probes to your FritzBoxes via MyFritz.**
 
 ## Story time
